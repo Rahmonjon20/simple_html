@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0;
+      }
+      main {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+      }
+      footer {
+        background-color: #f2f2f3;
+        text-align: center;
+        padding: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header section -->
+    <header></header>
+    <!-- main section -->
+    <main>
+      <div
+        style="
+          width: 500px;
+          background-color: #f2f2f3;
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+          border: 1px solid #ccc;
+          flex-direction: column;
+        "
+      >
+        <form
+          action="submit"
+          style="
+            margin-top: 30px;
+            display: flex;
+            gap: 40px;
+            flex-direction: column;
+            padding: 30px;
+          "
+        >
+          <legend
+            style="
+              font-size: 24px;
+              font-weight: bold;
+              margin-bottom: 20px;
+              text-align: center;
+              color: #333;
+              border-bottom: 1px solid #ccc;
+              flex-direction: column;
+            "
+          >
+            Input types
+          </legend>
+          <label for="text">
+            Text input:
+            <input type="text" id="text" name="text" required />
+          </label>
+          <label for="password">
+            Password input:
+            <input type="password" id="password" name="password" required />
+          </label>
+          <label for="email">
+            Email input:
+            <input type="email" id="email" name="email" required />
+          </label>
+          <label for="number">
+            Number input:
+            <input type="number" id="number" name="number" required />
+          </label>
+          <label for="range">
+            Range input:
+            <input
+              type="range"
+              id="range"
+              name="range"
+              min="0"
+              max="100"
+              required
+            />
+          </label>
+          <label for="checkbox">
+            Checkbox input:
+            <input type="checkbox" id="checkbox" name="checkbox" required />
+            <span>I agree to the terms and conditions</span>
+          </label>
+          <button
+            type="submit"
+            style="
+              border: none;
+              border-radius: 10px;
+              background-color: blue;
+              padding: 7px;
+            "
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </main>
+    <!-- footer section -->
+    <footer>
+      &copy; 2024 My Website
+      <a href="#">Privacy Policy</a>
+      <p>Created by Olimjonov Rahmonjon</p>
+    </footer>
+  </body>
+</html>
